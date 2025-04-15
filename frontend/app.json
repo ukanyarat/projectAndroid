@@ -15,7 +15,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.aparapiapio.frontend"
     },
     "web": {
       "bundler": "metro",
@@ -44,7 +48,14 @@
       "typedRoutes": true
     },
     "extra": {
-      "API_URL": "https://big-donuts-run.loca.lt/api"
-    }
+      "API_URL": "https://big-donuts-run.loca.lt/api",
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "3881f57f-0537-42f1-8acd-7db2f4201d6f"
+      }
+    },
+    "owner": "aparapiapio"
   }
 }
