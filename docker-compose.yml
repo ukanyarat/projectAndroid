@@ -2,7 +2,7 @@ services:
 
   postgres:
     image: postgres:14-alpine
-    container_name: nodddde
+    container_name: and_project_db
     environment:
       POSTGRES_DB: demo
       POSTGRES_USER: myuser

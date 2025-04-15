@@ -3,17 +3,17 @@ import { Ionicons } from "@expo/vector-icons";
 export default function TabLayout() {
     return (
         <Tabs
-            screenOptions={{
-                tabBarActiveTintColor: "#0de136",
-                headerStyle: {
-                    backgroundColor: "#c9fffb",
-                },
-                headerShadowVisible: false,
-                headerTintColor: "#464646",
-                tabBarStyle: {
-                    backgroundColor: "#c9fffb",
-                },
-            }}
+            // screenOptions={{
+                // tabBarActiveTintColor: "#0de136",
+                // headerStyle: {
+                //     backgroundColor: "#c9fffb",
+                // },
+                // headerShadowVisible: false,
+                // headerTintColor: "#464646",
+                // tabBarStyle: {
+                //     backgroundColor: "#c9fffb",
+                // },
+            // }}
         >
             <Tabs.Screen
                 name="index"
@@ -24,7 +24,7 @@ export default function TabLayout() {
                     ),
                 }}
             />
-            <Tabs.Screen
+            {/* <Tabs.Screen
                 name="create"
                 options={{
                     title: "create Book",
@@ -32,11 +32,11 @@ export default function TabLayout() {
                         <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24} />
                     ),
                 }}
-            />
+            /> */}
             <Tabs.Screen
-                name="topip8"
+                name="new"
                 options={{
-                    title: "topip8",
+                    title: "สร้างรายการ",
                     tabBarIcon: ({ color, focused }) => (
                         <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24} />
                     ),

@@ -13,14 +13,14 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model book {
+model transfer_slip_info {
   id          String   @id @default(uuid()) 
-  title       String  
-  author      String?  
-  price       Float?   
-  stock       Int?    
-  created_at   DateTime @default(now()) 
-  created_by   DateTime?
-  updated_at   DateTime @updatedAt 
-  updated_by   DateTime?
+  amount      Float
+  sender      String
+  recipient   String?
+  date        String?
+  time        String?
+  slip_ref    String?
+  created_at  DateTime @default(now()) 
+  updated_at  DateTime @updatedAt  
 }
